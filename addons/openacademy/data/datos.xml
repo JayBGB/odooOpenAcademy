@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+
+        <record model="usuarios" id="openacademy.usuarios">
+
+            <field name="name">Jay</field>
+            <field name="description">Senior Full Stack Developer</field>
+
+        </record>
+
+        <record model="pasajeros" id="openacademy.pasajeros">
+
+            <field name="name">Cristo Rey</field>
+            <field name="description">Señor y salvador</field>
+
+        </record>
+
+    </data>
+</odoo>

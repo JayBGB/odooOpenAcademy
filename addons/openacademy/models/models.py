@@ -16,3 +16,12 @@
 #     def _value_pc(self):
 #         for record in self:
 #             record.value2 = float(record.value) / 100
+
+from odoo import fields, models
+
+class usuarios(models.Model):
+    _name = 'usuarios'
+    _description = 'tabla de usuarios'
+
+    name = fields.Char(String = 'Name')
+    description = fields.Char(String = 'Description')

@@ -3,20 +3,19 @@
     'name': "openacademy",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Borja para SXE.""",
 
     'description': """
-        Long description of module's purpose
+        Módulo personalizado por Borja G. Barrera para SXE.
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "JayBGB",
+    'website': "https://github.com/JayBGB",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Alpha',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
