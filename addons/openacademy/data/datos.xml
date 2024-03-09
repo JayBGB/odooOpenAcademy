@@ -8,12 +8,5 @@
 
         </record>
 
-        <record model="pasajeros" id="openacademy.pasajeros">
-
-            <field name="name">Cristo Rey</field>
-            <field name="description">Señor y salvador</field>
-
-        </record>
-
     </data>
 </odoo>
