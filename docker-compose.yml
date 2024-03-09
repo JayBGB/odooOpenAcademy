@@ -1,0 +1,29 @@
+version: '3.1'
+services:
+  # Indicamos qué Imagen Web va a tendrá Odoo.
+  web:
+    image: odoo:16.0
+    depends_on:
+      - mydb
+    volumes:
+      - ./addons:/mnt/extra-addons
+    ports:
+      - "8069:8069" # Indicamos el puerto en el que se levantará.
+    environment:
+      - HOST=mydb # Nombre del Host al que nos conectaremos, es decir, la base de datos.
+      - USER=odoo # Usuario de la base de datos.
+      - PASSWORD=myodoo # Contraseña del usuario.
+
+
+  mydb: # Indicamos qué cliente de bases de datos usaremos.
+    image: postgres:15 # Para esta práctica vamos a utilizar PostgreSQL.
+    environment:
+      - POSTGRES_DB=postgres # La base de datos a la que nos vamos a conectar dentro del cliente.
+      - POSTGRES_PASSWORD=myodoo # La contraseña de "postgres".
+      - POSTGRES_USER=odoo # El usuario que se va a utilizar.
+    ports:
+      - "5432:5432" # Indicamos que Docker utilizará el puerto default 5432. Izquierda - local (se puede cambiar). Derecha - no se toca.
+
+
+
+
